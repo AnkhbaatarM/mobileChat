@@ -1,0 +1,70 @@
+import {StyleSheet} from 'react-native';
+import {width60} from '../../../assets/dimensions/width';
+export default StyleSheet.create({
+  logo: {
+    marginTop: 90,
+    width: 100,
+    height: 100,
+    alignSelf: 'center',
+    marginBottom: 50,
+  },
+  warningText: {
+    color: '#8f959c',
+    fontWeight: 'bold',
+    alignSelf: 'center',
+    textAlign: 'center',
+    width: width60,
+    marginVertical: 20,
+    fontSize: 15,
+  },
+  scrollContainer: {
+    flex: 1,
+    width: '90%',
+    alignSelf: 'center',
+  },
+  textBoxes: {
+    marginTop: 30,
+    height: 50,
+    flex: 0,
+  },
+  textBox: {
+    borderBottomWidth: 1,
+    borderColor: '#8f959c',
+    marginHorizontal: 5,
+  },
+  iconStyle: {
+    width: 20,
+    height: 20,
+    alignSelf: 'center',
+    marginRight: 10,
+  },
+  selecterButton: {
+    height: 50,
+    width: width60,
+    backgroundColor: '#3199e1',
+    borderColor: '#5b7dab',
+    justifyContent: 'flex-start',
+    alignSelf: 'center',
+    marginTop: 10,
+    borderRadius: 10,
+    paddingHorizontal: 10,
+    flexDirection: 'row',
+    borderWidth: 2,
+  },
+  mainbutton: {
+    height: 50,
+    width: width60,
+    backgroundColor: '#dd6365',
+    justifyContent: 'center',
+    alignSelf: 'center',
+    marginTop: 30,
+    borderRadius: 10,
+    paddingHorizontal: 10,
+  },
+  mainbuttontext: {
+    alignSelf: 'center',
+    color: 'white',
+    fontSize: 16,
+    fontWeight: 'bold',
+  },
+});

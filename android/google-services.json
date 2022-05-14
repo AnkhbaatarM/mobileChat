@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "905223515213",
+    "firebase_url": "https://ablechat-76de6.firebaseio.com",
+    "project_id": "ablechat-76de6",
+    "storage_bucket": "ablechat-76de6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:905223515213:android:e464205770e961d369c004",
+        "android_client_info": {
+          "package_name": "com.ablechat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "905223515213-9fhnv42494rcc8gl2gp9pm0itj5m22gv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFi6Va8poERsriAq2bWWd23lB4tY-c6OM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "905223515213-9fhnv42494rcc8gl2gp9pm0itj5m22gv.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "905223515213-db53pj390vv4dt8hu7a975b16ac1una2.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.AbleSoft.AbleChat"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

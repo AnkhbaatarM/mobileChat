@@ -1,0 +1,263 @@
+import { Platform } from 'react-native';
+import { width90, width60 } from 'root/Assets/constants/width';
+
+const React = require('react-native');
+import { Fonts } from 'font_directory/Fonts';
+import { width70, width85 } from '../../../utils/dimensions/width';
+let { StyleSheet } = React;
+
+module.exports = StyleSheet.create({
+    selectedUsersName: {
+        width: 80,
+        alignSelf: 'center',
+        fontFamily: Fonts.Arial,
+    },
+    searchInputContainer: {
+        width: width90,
+        borderRadius: 10,
+        height: 40,
+        alignSelf: 'center',
+        justifyContent: 'space-evenly',
+        marginBottom: 10,
+        flexDirection: 'row',
+        marginTop: Platform.OS === 'ios' ? 10 : 0,
+        backgroundColor: '#EEEEEE',
+    },
+    searchInputText: {
+        fontSize: 15,
+        fontFamily: Fonts.Arial,
+        color: 'gray',
+        alignSelf: 'center',
+    },
+    normalText: {
+        fontSize: 16,
+        fontFamily: Fonts.Arial,
+        color: 'gray',
+        alignSelf: 'center',
+    },
+    removeIconHolder: {
+        borderWidth: 1,
+        borderColor: 'gray',
+        width: 20,
+        height: 20,
+        borderRadius: 10,
+        justifyContent: 'center',
+        position: 'absolute',
+        top: 0,
+        right: 0,
+        backgroundColor: 'white',
+    },
+    normalTextRight: {
+        fontSize: 16,
+        fontFamily: Fonts.ArialBold,
+        color: 'gray',
+        alignSelf: 'flex-start',
+        marginVertical: 5,
+    },
+    normalTextInput: {
+        width: '90%',
+        fontSize: 15,
+        paddingVertical: 10,
+        fontFamily: Fonts.Arial,
+        color: 'gray',
+        alignSelf: 'center',
+        borderBottomWidth: 1,
+        borderColor: 'gray',
+    },
+    userIcon: {
+        width: 30,
+        height: 30,
+        borderRadius: 12,
+        borderWidth: 0.5,
+        borderColor: 'gray',
+    },
+    userName: {
+        fontSize: 15,
+        fontFamily: Fonts.Arial,
+        color: 'gray',
+        alignSelf: 'flex-start',
+        width: '80%',
+    },
+    safeAreaView: {
+        width: '80%',
+        height: 40,
+        alignItems: 'center',
+        alignSelf: 'center',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+    },
+    userStatus: {
+        width: '100%',
+        alignSelf: 'center',
+        flexDirection: 'row',
+        justifyContent: 'flex-start',
+    },
+    userContainer: {
+        width: width90 - 60,
+        alignSelf: 'center',
+        justifyContent: 'flex-start',
+    },
+    userChat: {
+        alignSelf: 'flex-start',
+        fontSize: 15,
+        fontFamily: Fonts.Arial,
+        color: 'gray',
+    },
+    userChatDate: {
+        alignSelf: 'flex-start',
+        fontSize: 13,
+        fontFamily: Fonts.Arial,
+        color: 'gray',
+    },
+    rootContainer: {
+        flex: 1,
+        backgroundColor: 'white',
+    },
+    flexStyle: {
+        flex: 1,
+    },
+    backContainer: {
+        width: 40,
+        height: 40,
+        justifyContent: 'center',
+    },
+    searchIcon: {
+        width: 40,
+        height: 40,
+        justifyContent: 'center',
+    },
+    listContainerStyle: {
+        margin: 3,
+        marginTop: 10,
+    },
+    keyboardAvoidContainer: {
+        width: '100%',
+        paddingHorizontal: 10,
+        alignSelf: 'center',
+        alignItems: 'center',
+        marginBottom: 20,
+        paddingTop: 20,
+    },
+    selectedUserSubContainer: {
+        // marginRight: 5,
+        width: 60,
+        height: 80,
+        backgroundColor: 'white',
+    },
+    deleteIcon: {
+        alignSelf: 'center',
+        width: 12,
+    },
+    selectedListStyle: {
+        width: width90,
+        backgroundColor: 'transparent',
+        height: 40,
+        flex: 1,
+    },
+    buttonIcon: {
+        alignSelf: 'center',
+        marginTop: 2,
+    },
+    roomCreateButton: {
+        width: '90%',
+        height: 50,
+        position: 'absolute',
+        backgroundColor: 'rgb(0,137,235)',
+        bottom: 10,
+        alignSelf: 'center',
+        justifyContent: 'center',
+        borderRadius: 10,
+    },
+    buttonText: {
+        fontSize: 16,
+        fontFamily: 'Roboto-Bold',
+        alignSelf: 'center',
+        color: 'white',
+    },
+    indicator: {
+        alignSelf: 'center',
+        width: 40,
+    },
+    cameraButton: {
+        alignSelf: 'center',
+    },
+    cameraIcon: {
+        alignSelf: 'center',
+    },
+    cameraCon: {
+        alignSelf: 'center',
+        padding: 5,
+        backgroundColor: 'white',
+        borderRadius: 12,
+        borderColor: 'gray',
+        borderWidth: 1.5,
+        bottom: -10,
+        position: 'absolute',
+    },
+    roomName: {
+        fontFamily: 'Roboto',
+        color: 'gray',
+        marginTop: 20,
+        fontSize: 20,
+        alignSelf: 'center',
+        fontWeight: '500',
+    },
+    searchInput: {
+        position: 'relative',
+        marginTop: 20,
+    },
+    selectedMainCont: {
+        // height: 50,
+        width: width85,
+        alignSelf: 'center',
+        marginTop: 10,
+        backgroundColor: 'transparent',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+    },
+    selectedCont: {
+        alignSelf: 'center',
+        width: 40,
+        height: 40,
+        justifyContent: 'center',
+        backgroundColor: 'white',
+        right: -5,
+        top: -17,
+    },
+    selectedLine: {
+        // flexGrow: 1,
+        height: 2,
+        backgroundColor: 'gray',
+        alignSelf: 'center',
+        position: 'absolute',
+        width: width70 + 20,
+        top: 23,
+    },
+    selectedSquircle: {
+        alignSelf: 'center',
+        position: 'absolute',
+        top: 6,
+    },
+    selectedCnt: {
+        color: 'white',
+        fontSize: 16,
+        fontFamily: 'Roboto-Bold',
+        alignSelf: 'center',
+    },
+
+    selectedScroll: {
+        maxWidth: '100%',
+        backgroundColor: 'white',
+        minWidth: 40,
+    },
+    selectedScrollContent: {
+        paddingRight: 10,
+        marginLeft: 0,
+    },
+    nameStyle: {
+        fontFamily: 'Roboto',
+        fontSize: 13,
+        textAlign: 'center',
+        alignSelf: 'center',
+    },
+});

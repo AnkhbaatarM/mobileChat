@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/RelativeLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitCenter"
+        fresco:actualImageScaleType="fitCenter"
+        fresco:failureImage="@mipmap/chat_logo"
+        fresco:placeholderImage="@mipmap/chat_logo"
+        fresco:retryImage="@mipmap/chat_logo" />
+    <RelativeLayout
+        android:id="@+id/callInfoLayout"
+        android:layout_width="match_parent"
+        android:paddingTop="33dp"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:layout_height="193dp">
+
+        <TextView
+            android:id="@+id/callStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/callerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            android:layout_below="@+id/callStatus"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/callActionLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/callInfoLayout">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:paddingHorizontal="50dp"
+            android:paddingVertical="60dp"
+            android:gravity="bottom" >
+
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/reject_call_btn"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@null"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/ic_decline" />
+
+                <ImageButton
+                    android:id="@+id/accept_call_btn"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_alignParentLeft="true"
+                    android:background="@null"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/ic_answer" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+    </FrameLayout>
+
+</RelativeLayout>

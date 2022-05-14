@@ -1,0 +1,173 @@
+var React = require('react-native');
+import { Dimensions, Platform } from 'react-native';
+var { StyleSheet } = React;
+import { Fonts } from 'font_directory/Fonts';
+import { width20 } from '../../_Components/_global/able-soft-component-ui/src/assets/dimensions/width';
+import { width18 } from '../../utils/dimensions/width';
+const width70 = (Dimensions.get('window').width * 70) / 100;
+const width50 = (Dimensions.get('window').width * 50) / 100;
+
+module.exports = StyleSheet.create({
+    userName: {
+        fontSize: 18,
+        fontFamily: Fonts.ArialBold,
+        color: 'white',
+        alignSelf: 'center',
+    },
+    callWindow: {
+        width: 200,
+        alignSelf: 'center',
+        borderRadius: 80,
+        padding: 20,
+        backgroundColor: 'white',
+        justifyContent: 'space-between',
+    },
+    callImage: {
+        width: 50,
+        height: 50,
+        borderWidth: 1,
+        borderRadius: 22,
+        alignSelf: 'center',
+    },
+    loadingImage: {
+        width: 50,
+        height: 50,
+        borderRadius: 22,
+        alignSelf: 'center',
+    },
+    userIcon: {
+        alignSelf: 'flex-start',
+        width: 40,
+        height: 40,
+        borderRadius: 25,
+        borderWidth: 2,
+        borderColor: 'white',
+    },
+    iconStyle: {
+        alignSelf: 'center',
+        height: 40,
+        width: 40,
+        justifyContent: 'center',
+    },
+    settingColumnContainer: {
+        flexDirection: 'row',
+        justifyContent: 'flex-end',
+        paddingHorizontal: 5,
+        marginBottom: 10,
+        height: 20,
+    },
+    settingWindow: {
+        height: 200,
+        backgroundColor: 'transparent',
+        top: Platform.OS === 'android' ? 10 : 48,
+        right: -10,
+        borderRadius: 5,
+    },
+    roomNameChangeContainer: {
+        width: width70,
+        backgroundColor: 'white',
+        justifyContent: 'flex-start',
+        alignSelf: 'center',
+        borderRadius: 5,
+        padding: 20,
+        shadowColor: '#000',
+        shadowOffset: {
+            width: 0,
+            height: 3,
+        },
+        shadowOpacity: 0.25,
+        elevation: 5,
+    },
+    roomPictureChangeContainer: {
+        width: width50,
+        backgroundColor: 'white',
+        justifyContent: 'flex-start',
+        alignSelf: 'center',
+        borderRadius: 5,
+        padding: 20,
+        shadowColor: '#000',
+        shadowOffset: {
+            width: 0,
+            height: 3,
+        },
+        shadowOpacity: 0.25,
+        elevation: 5,
+    },
+    activeView: {
+        alignSelf: 'center',
+        width: 20,
+        height: 20,
+        borderRadius: 10,
+        borderWidth: 2,
+        borderColor: 'white',
+        position: 'absolute',
+        backgroundColor: '#03fc56',
+        left: 25,
+        bottom: 0,
+    },
+    settingWindowContainer: {
+        right: 0,
+        position: 'absolute',
+        backgroundColor: 'white',
+        paddingTop: 10,
+        borderRadius: 5,
+        shadowColor: '#000',
+        shadowOffset: {
+            width: 0,
+            height: 3,
+        },
+        shadowOpacity: 0.25,
+        elevation: 5,
+        top: 5,
+    },
+    container: {
+        paddingEnd: 15,
+        width: '100%',
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: 'white',
+        flexDirection: 'row',
+        height: width18,
+        shadowColor: 'gray',
+        shadowOffset: {
+            width: 0,
+            height: 3,
+        },
+        shadowOpacity: 0.4,
+        shadowRadius: 1,
+        elevation: 2,
+        zIndex: 10,
+        paddingHorizontal: 10,
+    },
+    moreIcon: {
+        alignSelf: 'center',
+    },
+    moreIconContainer: {
+        alignSelf: 'center',
+        width: 40,
+        height: '100%',
+        justifyContent: 'center',
+    },
+    modalHeader: {
+        fontSize: 18,
+        fontFamily: Fonts.Arial,
+        color: 'black',
+        alignSelf: 'center',
+        marginTop: 5,
+    },
+    modalBody: {
+        fontSize: 15,
+        fontFamily: Fonts.Arial,
+        color: '#3b4252',
+        marginVertical: 15,
+        alignSelf: 'center',
+    },
+    modalButton: {
+        width: 50,
+        height: 50,
+        backgroundColor: 'red',
+        alignSelf: 'center',
+        borderRadius: 25,
+        justifyContent: 'center',
+    },
+});
